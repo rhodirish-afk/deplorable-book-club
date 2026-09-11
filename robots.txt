@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rhodirish-afk.github.io/deplorable-book-club/sitemap.xml

@@ -1,0 +1,6 @@
+html{scroll-behavior:smooth}
+body{background-color:#0f0e0c;background-image:radial-gradient(ellipse at 20% 0%,rgba(196,92,38,0.12),transparent 50%),radial-gradient(ellipse at 90% 100%,rgba(232,168,124,0.06),transparent 40%);}
+#mobile-nav:not(.hidden){display:block}
+.grain::before{content:'';pointer-events:none;position:fixed;inset:0;opacity:.03;z-index:50}
+.prose a{color:#e8a87c;text-decoration:underline;text-underline-offset:3px}
+.prose a:hover{color:#f3ebe0}
