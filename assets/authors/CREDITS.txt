@@ -1,25 +1,13 @@
 Author portraits — The Deplorable Book Club
 
-STATUS (2026-09-11): Real headshots not yet in-repo.
-  kevinmyers.ie image URLs returned HTTP 503 / SiteGround captcha.
-  Wayback Machine CDX had no usable capture for kevin-myers-main-800.jpg.
-  Chartwell Speakers and secretvictory.co.uk pages were bot-blocked or JS-rendered without a direct image URL.
-  Founder-cleared photos are pending upload as:
-    assets/authors/kevin-myers.jpg
-    assets/authors/william-matchett.jpg
-  Intended credit line once uploaded: used with founder permission for club marketing.
+STATUS (2026-09-11): Founder-provided headshots in use.
 
-william-matchett.svg
-  Locally generated silhouette placeholder (no rights risk), with improved CSS portrait treatment on authors.html.
-  Prefer official headshot from Chartwell Speakers or Secret Victory when cleared:
-  https://www.chartwellspeakers.com/speaker/william-matchett/
-  https://www.secretvictory.co.uk/the-author
+kevin-myers.jpg
+  Provided by Rory Hanrahan for club marketing (broadcast still; RTÉ logos trimmed).
+  Used with founder permission.
 
-kevin-myers.svg
-  Locally generated silhouette placeholder (no rights risk), with improved CSS portrait treatment on authors.html.
-  Prefer cleared author-site portrait when available:
-  https://kevinmyers.ie/wp-content/uploads/2011/09/kevin-myers-main-800.jpg
-  Wikipedia article has no infobox photograph as of Sep 2026.
+william-matchett.jpg
+  Provided by Rory Hanrahan for club marketing (Policy Exchange appearance).
+  Used with founder permission.
 
-Press archives (RTÉ Stills, Images4media/Victor Patterson, Irish Times/Eric Luke,
-News Letter/Pacemaker) hold usable likenesses but require licence; not mirrored here.
+SVG silhouettes remain in-repo as fallbacks only.
