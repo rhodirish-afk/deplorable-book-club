@@ -3,11 +3,7 @@ import base64, pathlib, io
 from PIL import Image
 for stem in ("kevin-myers", "william-matchett"):
     base = pathlib.Path(f"assets/authors/{stem}.jpg.b64")
-    extras = [
-        pathlib.Path(f"assets/authors/{stem}.jpg.b64.part2"),
-        pathlib.Path(f"assets/authors/{stem}.jpg.b64.part3"),
-        pathlib.Path(f"assets/authors/{stem}.jpg.b64.part4"),
-    ]
+    extras = [pathlib.Path(f"assets/authors/{stem}.jpg.b64.part{n}") for n in range(2, 10)]
     if not base.exists() and not any(p.exists() for p in extras):
         print("skip", stem)
         continue
