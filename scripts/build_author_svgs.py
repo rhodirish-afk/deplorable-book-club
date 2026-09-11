@@ -3,16 +3,16 @@ import base64, pathlib, io
 from PIL import Image
 for stem in ("kevin-myers", "william-matchett"):
     base = pathlib.Path(f"assets/authors/{stem}.jpg.b64")
-    extras = [pathlib.Path(f"assets/authors/{stem}.jpg.b64.part{n}") for n in range(2, 10)]
-    if not base.exists() and not any(p.exists() for p in extras):
+    extras = sorted(pathlib.Path("assets/authors").glob(f"{stem}.jpg.b64.part*"))
+    if not base.exists() and not extras:
         print("skip", stem)
         continue
     chunks = []
     if base.exists():
         chunks.append(base.read_text().strip())
     for p in extras:
-        if p.exists():
-            chunks.append(p.read_text().strip())
+        chunks.append(p.read_text().strip())
+        print(" +", p.name, len(chunks[-1]))
     b64 = "".join(chunks)
     if not b64:
         continue
