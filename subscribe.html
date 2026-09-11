@@ -13,11 +13,11 @@
 <meta property="og:description" content="Join The Deplorable Book Club waitlist. Planned membership &pound;8&ndash;12/month. Email myone_ie@hotmail.co.uk &mdash; no payment taken yet."/>
 <meta property="og:site_name" content="The Deplorable Book Club"/>
 <meta property="og:locale" content="en_GB"/>
-<meta property="og:image" content="https://rhodirish-afk.github.io/deplorable-book-club/assets/og.svg"/>
+<meta property="og:image" content="https://rhodirish-afk.github.io/deplorable-book-club/assets/og.png"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="Join the waitlist &mdash; The Deplorable Book Club"/>
 <meta name="twitter:description" content="Join The Deplorable Book Club waitlist. Planned membership &pound;8&ndash;12/month. Email myone_ie@hotmail.co.uk &mdash; no payment taken yet."/>
-<meta name="twitter:image" content="https://rhodirish-afk.github.io/deplorable-book-club/assets/og.svg"/>
+<meta name="twitter:image" content="https://rhodirish-afk.github.io/deplorable-book-club/assets/og.png"/>
 <script src="https://cdn.tailwindcss.com"></script>
 <script>tailwind.config={theme:{extend:{colors:{ink:'#0f0e0c',panel:'#1a1814',cream:'#e8e0d4',muted:'#a39a8c',rule:'#2e2a24',accent:'#c45c26',ember:'#e8a87c',paper:'#f3ebe0'},fontFamily:{serif:['Georgia','Cambria','Times New Roman','serif'],sans:['system-ui','sans-serif']}}}}</script>
 <link rel="stylesheet" href="/deplorable-book-club/assets/site.css"/>
@@ -38,13 +38,49 @@
 <main id="main" class="max-w-3xl mx-auto px-5 py-14">
 <p class="text-sm uppercase tracking-[0.2em] text-accent mb-3">Coming soon</p>
 <h1 class="font-serif text-4xl sm:text-5xl text-cream mb-6">Join the waitlist</h1>
-<p class="text-muted mb-10">Payments, the app, and automatic renewals are not live yet. If you want in &mdash; reader, author, or both &mdash; email the founder. When the club opens, you hear first. No form farms; no dark patterns.</p>
+<p class="text-muted mb-10">Payments, the app, and automatic renewals are not live yet. If you want in &mdash; reader, author, or events &mdash; use the form below or email the founder. When the club opens, you hear first. No dark patterns.</p>
 <div class="grid sm:grid-cols-2 gap-4 mb-10">
 <div class="border border-rule rounded-lg p-6 bg-panel"><p class="text-xs uppercase tracking-widest text-accent mb-2">Reader membership</p><p class="font-serif text-3xl text-cream mb-1">&pound;8&ndash;12<span class="text-lg text-muted">/mo</span></p><p class="text-sm text-muted">Book discounts on the unpublishables, the magazine, community access, event perks. Exact tiers at launch.</p></div>
 <div class="border border-rule rounded-lg p-6 bg-panel"><p class="text-xs uppercase tracking-widest text-accent mb-2">Events</p><p class="font-serif text-3xl text-cream mb-1">&pound;15&ndash;25</p><p class="text-sm text-muted">Typical ticket for meet-the-author nights. Subscribers go first.</p></div>
 </div>
-<div class="rounded-lg border border-accent/40 bg-panel p-8"><h2 class="font-serif text-2xl text-cream mb-3">Email the waitlist</h2><p class="text-muted text-sm mb-5">One line to Rory is enough. Put &ldquo;waitlist&rdquo; in the subject. Say where you are and whether you care more about books, the magazine, or the nights out &mdash; optional, but useful.</p><a href="mailto:myone_ie@hotmail.co.uk?subject=Deplorable%20Book%20Club%20waitlist" class="inline-block bg-accent text-ink font-medium px-5 py-3 rounded hover:bg-ember transition">myone_ie@hotmail.co.uk</a><p class="mt-4 text-xs text-muted">We will not sell your address. See <a href="/deplorable-book-club/privacy.html" class="underline hover:text-cream">Privacy</a>.</p></div>
-<p class="mt-8 text-sm text-muted">Authors pitching an unpublishable: same address, subject line &ldquo;Author pitch&rdquo;.</p>
+<div class="rounded-lg border border-accent/40 bg-panel p-8">
+<h2 class="font-serif text-2xl text-cream mb-3">Join the waitlist</h2>
+<p class="text-muted text-sm mb-6">Tell us who you are. When payments and the app go live &mdash; and when the December London night is dated &mdash; you hear first.</p>
+<form action="https://formsubmit.co/myone_ie@hotmail.co.uk" method="POST" class="space-y-4">
+<input type="hidden" name="_subject" value="Deplorable Book Club waitlist"/>
+<input type="hidden" name="_captcha" value="false"/>
+<input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off"/>
+<div>
+<label for="name" class="block text-xs uppercase tracking-widest text-accent mb-1.5">Name</label>
+<input id="name" name="name" type="text" required class="w-full rounded border border-rule bg-ink px-3 py-2.5 text-cream placeholder:text-muted/60 focus:outline-none focus:border-accent" placeholder="Your name"/>
+</div>
+<div>
+<label for="email" class="block text-xs uppercase tracking-widest text-accent mb-1.5">Email</label>
+<input id="email" name="email" type="email" required class="w-full rounded border border-rule bg-ink px-3 py-2.5 text-cream placeholder:text-muted/60 focus:outline-none focus:border-accent" placeholder="you@example.com"/>
+</div>
+<div>
+<label for="interest" class="block text-xs uppercase tracking-widest text-accent mb-1.5">Interest</label>
+<select id="interest" name="interest" required class="w-full rounded border border-rule bg-ink px-3 py-2.5 text-cream focus:outline-none focus:border-accent">
+<option value="" disabled selected>Select one</option>
+<option value="reader">Reader</option>
+<option value="author">Author</option>
+<option value="events">Events</option>
+</select>
+</div>
+<div>
+<label for="message" class="block text-xs uppercase tracking-widest text-accent mb-1.5">Message <span class="text-muted normal-case tracking-normal">(optional)</span></label>
+<textarea id="message" name="message" rows="3" class="w-full rounded border border-rule bg-ink px-3 py-2.5 text-cream placeholder:text-muted/60 focus:outline-none focus:border-accent" placeholder="City, books you want, or a short pitch"></textarea>
+</div>
+<button type="submit" class="bg-accent text-ink font-medium px-5 py-3 rounded hover:bg-ember transition">Join the waitlist</button>
+</form>
+<p class="mt-4 text-xs text-muted">First FormSubmit use may need email confirmation from <span class="text-cream">myone_ie@hotmail.co.uk</span> before deliveries arrive. We will not sell your address. See <a href="/deplorable-book-club/privacy.html" class="underline hover:text-cream">Privacy</a>.</p>
+</div>
+<div class="mt-6 rounded-lg border border-rule bg-panel/80 p-6">
+<h3 class="font-serif text-lg text-cream mb-2">Prefer email?</h3>
+<p class="text-muted text-sm mb-3">Mailto still works. Put &ldquo;waitlist&rdquo; in the subject.</p>
+<a href="mailto:myone_ie@hotmail.co.uk?subject=Deplorable%20Book%20Club%20waitlist" class="text-ember hover:text-cream underline underline-offset-4 text-sm">myone_ie@hotmail.co.uk</a>
+</div>
+<p class="mt-8 text-sm text-muted">Authors pitching an unpublishable: same address, subject line &ldquo;Author pitch&rdquo; &mdash; or choose <em>Author</em> on the form above.</p>
 </main>
 <footer class="border-t border-rule bg-panel/60 py-12 mt-16"><div class="max-w-5xl mx-auto px-5 text-sm text-muted"><div class="flex flex-col md:flex-row justify-between gap-8"><div class="max-w-md"><p class="font-serif text-cream text-lg mb-2"><span class="text-accent">&para;</span> The Deplorable Book Club</p><p>A subscription home for the unpublishables &mdash; and the deplorables who still want to read them. Free speech, contested history, and books polite lists skip.</p></div><div class="flex flex-wrap gap-x-5 gap-y-2"><a href="/deplorable-book-club/about.html" class="hover:text-cream">About</a><a href="/deplorable-book-club/how-it-works.html" class="hover:text-cream">How it works</a><a href="/deplorable-book-club/authors.html" class="hover:text-cream">Authors</a><a href="/deplorable-book-club/events.html" class="hover:text-cream">Events</a><a href="/deplorable-book-club/subscribe.html" class="hover:text-cream">Subscribe</a><a href="/deplorable-book-club/investors.html" class="hover:text-cream">Investors</a><a href="/deplorable-book-club/privacy.html" class="hover:text-cream">Privacy</a><a href="mailto:myone_ie@hotmail.co.uk" class="hover:text-cream">Contact</a></div></div><p class="mt-8 text-xs text-muted/80">&copy; 2026 The Deplorable Book Club Ltd &middot; Founded by Rory Hanrahan &middot; UK</p></div></footer>
 </body>
