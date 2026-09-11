@@ -1,13 +1,13 @@
 Author portraits — The Deplorable Book Club
 
-STATUS (2026-09-11): Founder-provided headshots in use.
+STATUS (2026-09-11): Founder-provided headshots in use on Authors page.
 
-kevin-myers.jpg
-  Provided by Rory Hanrahan for club marketing (broadcast still; RTÉ logos trimmed).
-  Used with founder permission.
+kevin-myers.svg / kevin-myers.jpg
+  Founder-provided broadcast still (RTÉ logos trimmed), wrapped as SVG for Pages.
+  Used with founder permission for club marketing.
 
-william-matchett.jpg
-  Provided by Rory Hanrahan for club marketing (Policy Exchange appearance).
-  Used with founder permission.
+william-matchett.svg / william-matchett.jpg
+  Founder-provided Policy Exchange appearance photo, wrapped as SVG for Pages.
+  Used with founder permission for club marketing.
 
-SVG silhouettes remain in-repo as fallbacks only.
+Authors page references the .svg portraits (embedded JPEG photos).
