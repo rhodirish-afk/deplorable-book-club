@@ -44,7 +44,6 @@ jobs:
           draw.text((150, 210), 'The Deplorable', fill='#e8e0d4', font=font_lg)
           draw.text((150, 295), 'Book Club', fill='#e8a87c', font=font_lg)
           draw.text((150, 400), 'Books the trade will not touch.', fill='#a39a8c', font=font_sm)
-          draw.text((150, 530), 'deplorablebookclub.com', fill='#a39a8c', font=font_xs)
           os.makedirs('assets', exist_ok=True)
           img.save('assets/og.png', 'PNG', optimize=True)
           print('wrote', os.path.getsize('assets/og.png'))
