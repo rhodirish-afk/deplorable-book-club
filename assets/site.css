@@ -17,3 +17,8 @@ body{background-color:#0f0e0c;background-image:radial-gradient(ellipse at 20% 0%
 .section-rule::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,#2e2a24,transparent)}
 .joined-banner{border:1px solid rgba(196,92,38,.45);background:rgba(196,92,38,.12);color:#e8e0d4;border-radius:.5rem;padding:1rem 1.25rem;margin-bottom:1.5rem}
 .joined-banner strong{color:#e8a87c}
+
+/* Accessibility: visible keyboard focus everywhere */
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid #e8a87c;outline-offset:2px;border-radius:2px}
+/* Accessibility: accent text on panel backgrounds needs a touch more contrast (WCAG AA 4.5:1) */
+.bg-panel .text-accent{color:#d9692e}
